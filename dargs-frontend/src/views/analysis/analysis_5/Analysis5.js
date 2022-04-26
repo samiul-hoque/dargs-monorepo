@@ -92,7 +92,7 @@ const Analysis4 = () => {
       {analysis.map(function (m, i) {
         return (
           <CCard key={i} className="mb-4">
-            <CCardHeader>{`${m.semester} | Analysis 4`}</CCardHeader>
+            <CCardHeader>{`${m.semester} | Analysis 5`}</CCardHeader>
             <CCardBody>
               <CTable>
                 <CTableHead>
@@ -118,7 +118,7 @@ const Analysis4 = () => {
       })}
 
       <CCard className="mb-4">
-        <CCardHeader>{`Analysis 5`}</CCardHeader>
+        <CCardHeader>{`Total IUB Resources`}</CCardHeader>
         <CCardBody>
           <CTable>
             <CTableHead>
