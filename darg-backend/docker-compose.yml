@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  db:
+    image: mariadb:10.4.12
+    environment:
+      MARIADB_ROOT_PASSWORD: example
+      MARIADB_USER: root
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data:/var/lib/mysql
+    restart: always
