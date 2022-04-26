@@ -52,7 +52,15 @@ const Analysis2 = () => {
         <CCardHeader>Input Panel | Analysis 2</CCardHeader>
         <CCardBody>
           <h3 className="h5">Problem statement</h3>
-          <p>Problem statement goes here</p>
+          <p>
+          Comparative analysis of the number of sections in each school in selected semester/s
+          that have a number of students enrolled in them that is less than the number given by
+          the user, as well as in reference to the total number of such sections in the university. A
+          detailed breakdown should also be available for this analysis where users can navigate
+          to a view that shows the number of all such sections (that have less than the number of
+          students entered by user) offered in each school w.r.t. number of students enrolled in
+          them, starting from 1 and incrementing by 1.
+          </p>
           <Select
             isMulti={true}
             onChange={(values) => setSelectedYearSemesters(values.map((v) => v.value))}

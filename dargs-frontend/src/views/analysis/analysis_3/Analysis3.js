@@ -50,7 +50,11 @@ const Analysis3 = () => {
         <CCardHeader>Input Panel | Analysis 3</CCardHeader>
         <CCardBody>
           <h3 className="h5">Problem statement</h3>
-          <p>Problem statement goes here</p>
+          <p>
+          Comparative analysis of percentage of unused resources for each school in selected
+          semester/s, as well as w.r.t to total unused percentage for the university overall based on
+          average enrollment per section versus average capacity per room.
+          </p>
           <Select
             isMulti={true}
             onChange={(values) => setSelectedYearSemesters(values.map((v) => v.value))}

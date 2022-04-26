@@ -60,7 +60,16 @@ const Analysis4 = () => {
         <CCardHeader>Input Panel | Analysis 5</CCardHeader>
         <CCardBody>
           <h3 className="h5">Problem statement</h3>
-          <p>Problem statement goes here</p>
+          <p>
+          Classroom requirement summary based on class size, total slots per day, and sections
+          offered:
+          Based on a given range of class size (any of the following ranges selected by user: 1-20,
+          21-30, 31-35, 36-40, 41-50, 51-54, 55-64, 65-124, 125-168; class size = number of
+          students enrolled in a section), and accordingly the number of sections offered in a
+          semester, how many classrooms would be needed if each day’s schedule was divided
+          into seven slots versus the number of such such classroom that are actually available?
+          What about the same for eight slots?
+          </p>
           <Select
             isMulti={true}
             onChange={(values) => setSelectedYearSemesters(values.map((v) => v.value))}

@@ -58,7 +58,13 @@ const Analysis4 = () => {
         <CCardHeader>Input Panel | Analysis 4</CCardHeader>
         <CCardBody>
           <h3 className="h5">Problem statement</h3>
-          <p>Problem statement goes here</p>
+          <p>
+          Comparison of the number sections offered across the departments in SETS for a
+          selection of class sizes (any of the following ranges selected by user: 1-10, 11-20, 21-30,
+          31-35, 36-40, 41-50, 51-55, 56-60, 60+; class size = number of students enrolled in a
+          section) w.r.t each other as well as the total number of sections overall in SETS in
+          selected semester/s.
+          </p>
           <Select
             isMulti={true}
             onChange={(values) => setSelectedYearSemesters(values.map((v) => v.value))}
