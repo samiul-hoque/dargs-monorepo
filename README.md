@@ -62,7 +62,8 @@ This repo contains two seperate applications.
     python manage.py migrate
     ```
     ```
-    #not mandatory, initiates database from tally sheets in ./assets folder. Expected name for tally sheets, "Tally <SEMESTER> <YEAR>.csv" in standard IUB Tally Sheet format.
+    #not mandatory, initiates database from tally sheets in ./assets folder. 
+    #Expected name for tally sheets, "Tally <SEMESTER> <YEAR>.csv" in standard IUB Tally Sheet format.
     python seed.py             
     ```
     ```
