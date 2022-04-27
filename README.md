@@ -44,19 +44,29 @@ This repo contains two seperate applications.
     docker-compose up -d                        
     ```
     ```
+    #Create a python Virtual Environment
+    python -m venv venv
+    ```
+    ```
     .\venv\Scripts\activate
     ```
     ```
     pip install -r requirements.txt
     ```
     ```
+    #stages db migrations
     python manage.py migrate
     ```
     ```
-    #not mandatory, initiates database from tally sheets in ./assets folder
+    #appends any migrations
+    python manage.py migrate
+    ```
+    ```
+    #not mandatory, initiates database from tally sheets in ./assets folder. Expected name for tally sheets, "Tally <SEMESTER> <YEAR>.csv" in standard IUB Tally Sheet format.
     python seed.py             
     ```
     ```
+    #Start the backend server
     python manage.py runserver
     ```
 + ## dargs-front-end
